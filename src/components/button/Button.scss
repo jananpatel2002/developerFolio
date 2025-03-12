@@ -32,6 +32,13 @@
 .project-button > .main-button {
   margin-right: 0 !important;
 }
+
+.button-greeting-div {
+  display: flex;
+  gap: 20px;  /* Add space between buttons */
+  flex-wrap: wrap;  /* Allow buttons to wrap on small screens */
+}
+
 /* Media Query */
 @media (max-width: 768px) {
   .main-button {
@@ -39,9 +46,19 @@
     padding: 12px 18px;
     margin-right: 0px;
   }
+  
+  .button-greeting-div {
+    gap: 15px;  /* Slightly reduce gap on mobile */
+    justify-content: center;  /* Center buttons when wrapped */
+  }
 }
+
 @media (max-width: 320px) {
   .main-button {
     font-size: 0.75rem;
+  }
+  
+  .button-greeting-div {
+    gap: 12px;  /* Further reduce gap on very small screens */
   }
 }
