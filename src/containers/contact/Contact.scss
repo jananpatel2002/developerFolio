@@ -1,11 +1,31 @@
 @import "../../_globalColor";
 
-.contact-div-main {
-  display: flex;
+.contact-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
 }
 
-.dark-mode a {
-  color: $textColorDark;
+.contact-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.contact-subtitle {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.contact-div-main {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: 0px auto;
+  margin-top: 4rem;
 }
 
 .contact-div-main > * {
@@ -17,13 +37,22 @@
   font-weight: 400;
 }
 
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .contact-detail,
 .contact-detail-email {
-  margin-top: 20px;
+  margin: 0;
   font-size: 40px;
   font-weight: 400;
   color: $subTitle;
   text-decoration: none;
+  word-break: break-all;
+  max-width: 100%;
 }
 
 .contact-detail:hover,
@@ -53,35 +82,47 @@
 }
 
 /* Media Query */
-@media (max-width: 1380px), (max-width: 768px) {
-  .contact-title {
-    font-size: 56px;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .contact-title {
+@media (max-width: 1380px) {
+  .contact-heading {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 30px;
     text-align: center;
   }
-
   .contact-subtitle {
     font-size: 16px;
     line-height: normal;
     text-align: center;
   }
-
-  .contact-text-div {
-    text-align: center;
-    margin-top: 1.5rem;
+  .contact-div-main {
+    flex-direction: column;
   }
-
   .contact-detail,
   .contact-detail-email {
     font-size: 20px;
+    padding: 0 15px;
+    word-break: break-all;
+    max-width: 100%;
   }
 
-  .contact-image-div {
-    display: none;
+  .contact-info-container {
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  .contact-text-div {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 16px;
   }
 }

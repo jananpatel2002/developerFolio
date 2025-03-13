@@ -1,26 +1,26 @@
 @import "../../_globalColor";
 
-.achievement-main {
+.projects-main {
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
 }
 
-.achievement-heading {
+.projects-heading {
   font-size: 56px;
   font-weight: 400;
   line-height: normal;
   margin: 0px;
 }
 
-.achievement-subtitle {
+.projects-subtitle {
   text-transform: uppercase;
   margin: 0px;
   margin-bottom: 50px;
 }
 
-.achievement-cards-div {
+.projects-main-div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
@@ -28,17 +28,17 @@
 
 /* Media Query */
 @media (max-width: 1380px) {
-  .achievement-heading {
+  .projects-heading {
     font-size: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .achievement-heading {
+  .projects-heading {
     font-size: 30px;
     text-align: center;
   }
-  .achievement-subtitle {
+  .projects-subtitle {
     font-size: 16px;
     line-height: normal;
     text-align: center;

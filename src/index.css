@@ -19,12 +19,22 @@ code {
 html,
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 body {
-  margin: 0;
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure all main containers respect the viewport width */
+.main {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 /* Media Query */
 @media (max-width: 1380px) {
