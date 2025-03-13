@@ -174,32 +174,32 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Full Stack Software Engineer",
+      company: "AmherstTech",
+      companylogo: require("./assets/images/amhersttech.webp"), // Using Facebook logo as placeholder
+      date: "August 2024 - Present",
+      desc: "Leading frontend development for a ride-sharing application while collaborating on backend integration.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed and optimized core frontend features for a ride-sharing application using Flutter and Dart, enhancing user experience with a smooth, intuitive UI",
+        "Designed and implemented an interactive map navigation system on the homepage, improving usability and enabling seamless group ride coordination based on location proximity",
+        "Collaborated closely with backend developers utilizing Node.js, facilitating efficient data flow between frontend and backend systems to ensure real-time updates and reliability in ride tracking",
+        "Contributed to AmherstTech's agile startup environment by iteratively refining application features, which improved app stability and customer satisfaction by 20% during beta testing"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Full Stack Web Engineer",
+      company: "UKey",
+      companylogo: require("./assets/images/ukeyLogo.png"),
+      date: "June 2023 - August 2024",
+      desc: "Developed and enhanced full-stack features for a complex dashboard system using Vue.js, TypeScript, and Java.",
+      descBullets: [
+        "Developed and enhanced Vue.js and TypeScript front-end features for a complex dashboard, creating new subsections to improve user experience and functionality",
+        "Designed and implemented RESTful APIs using Helidon on Java, integrating PostgreSQL and ArangoDB for optimized backend data management and seamless database interactions",
+        "Extended and maintained existing APIs, improving performance and scalability by 15%, and ensuring smooth integration with front-end features"
+      ]
     }
   ]
 };
