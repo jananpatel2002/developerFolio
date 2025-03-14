@@ -7,6 +7,9 @@
   height: 26px;
   user-select: none;
   -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  
+  /* Prevent text selection */
   -moz-user-select: none;
   -ms-user-select: none;
 }
@@ -52,6 +55,10 @@ input {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none; /* Prevents iOS callout */
+  pointer-events: none; /* Prevents all pointer interactions */
 }
 
 /* Rounded sliders */
