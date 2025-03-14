@@ -5,6 +5,19 @@
   display: inline-block;
   width: 50px;
   height: 26px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  &:hover {
+    .slider::before {
+      animation: toggleBounce 0.6s ease-in-out infinite;
+    }
+    .emoji {
+      animation: toggleBounce 0.6s ease-in-out infinite;
+    }
+  }
 }
 
 /* Fix visible slider checkbox */
@@ -105,5 +118,52 @@ input:checked + .slider::after {
 @media all and (max-width: 1552px) and (min-width: 1440px) {
   .slider::after {
     bottom: 7.5% !important;
+  }
+}
+
+/* Add these new keyframe animations */
+@keyframes toggleBounce {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(12px);
+  }
+}
+
+/* For dark mode (when input is checked) */
+input:checked + .slider {
+  &::before, .emoji {
+    transform: translateX(26px);
+  }
+  
+  &:hover {
+    &::before {
+      animation: toggleBounceReverse 0.6s ease-in-out infinite;
+    }
+    .emoji {
+      animation: toggleBounceReverse 0.6s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes toggleBounceReverse {
+  0%, 100% {
+    transform: translateX(26px);
+  }
+  25% {
+    transform: translateX(18px);
+  }
+  50% {
+    transform: translateX(22px);
+  }
+  75% {
+    transform: translateX(14px);
   }
 }

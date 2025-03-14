@@ -1,5 +1,19 @@
 @import "../../_globalColor";
 
+// Update the gradient variables for smoother transitions
+$gradient-light: linear-gradient(120deg, 
+  rgba($buttonColor, 0) 0%,
+  rgba($buttonColor, 1) 25%,
+  adjust-hue($buttonColor, 25deg) 75%,
+  rgba(adjust-hue($buttonColor, 25deg), 0) 100%
+);
+$gradient-dark: linear-gradient(120deg, 
+  rgba(#4a00e0, 0) 0%,
+  rgba(#4a00e0, 1) 25%,
+  #8e2de2 75%,
+  rgba(#8e2de2, 0) 100%
+);
+
 /*React-headroom*/
 .headroom-wrapper {
   max-height: 100px;
@@ -14,10 +28,14 @@
 
 .dark-menu li a {
   color: $textColorDark !important;
-}
-
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
+  
+  &:hover {
+    background-color: transparent !important;
+  }
+  
+  &::after {
+    background: $darkBoxShadow; // Use a light color for dark mode
+  }
 }
 
 .header {
@@ -43,11 +61,32 @@
   padding: 15px 20px;
   color: $textColor;
   text-decoration: none;
+  position: relative;
+  
+  &:hover {
+    background-color: transparent;
+  }
+  
+  // Clean underline effect
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 10px;
+    left: 0;
+    background-color: $buttonColor;
+    transition: width 0.3s ease-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: $headerHoverBG;
+  background-color: transparent; // Change from $headerHoverBG to transparent
 }
 
 .header .logo {
@@ -178,5 +217,51 @@
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+// Dark mode modification
+.dark-menu li a {
+  color: $textColorDark !important;
+  
+  &::after {
+    background-color: $darkBoxShadow;
+  }
+}
+
+// Enhanced hover effects with smoother animation
+.header li {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 8px; // Increased spacing between items
+  
+  &:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+  }
+}
+
+// Smoother glow effect in dark mode
+.dark-menu li a:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+// Animation for active/current page
+.header li a.active {
+  &::before {
+    transform: scaleX(1);
+  }
+  color: white;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .header li a {
+    &::before {
+      border-radius: 35px; // Still round but slightly less on mobile
+    }
+  }
+  
+  .header li {
+    margin: 5px 2px;
   }
 }

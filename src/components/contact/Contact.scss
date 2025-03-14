@@ -1,0 +1,21 @@
+@import "../../_globalColor";
+
+.contact-detail-div {
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+      color: $contactDetailHoverLight;
+    }
+  }
+}
+
+.dark-mode {
+  .contact-detail-div {
+    a:hover {
+      color: $contactDetailHoverDark;
+    }
+  }
+}

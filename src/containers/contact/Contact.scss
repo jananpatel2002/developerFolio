@@ -57,9 +57,17 @@
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-  color: $textColor;
+  color: var(--hover-color, $contactDetailHoverLight);
   text-shadow: 2px 1px 2px $contactDetailHoverTS;
   transition: all 0.3s;
+}
+
+// Add dark mode specific styles
+.dark-mode {
+  .contact-detail:hover,
+  .contact-detail-email:hover {
+    color: $contactDetailHoverDark;
+  }
 }
 
 .contact-subtitle {
