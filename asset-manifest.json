@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2d0eca54.css",
-    "main.js": "/static/js/main.7aac070d.js",
+    "main.js": "/static/js/main.157aa2e0.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.bcaf8dd9.chunk.js": "/static/js/64.bcaf8dd9.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
@@ -9,6 +9,7 @@
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/amhersttech.webp": "/static/media/amhersttech.d919c12f82a140a36631.webp",
     "static/media/umass.png": "/static/media/umass.b8f992075e6a820c58a2.png",
+    "static/media/resume.pdf": "/static/media/resume.d3996c7a3ec2a7f405c2.pdf",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/stcc.png": "/static/media/stcc.0f8d6cd2a72b32f6d224.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
@@ -22,7 +23,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.2d0eca54.css.map": "/static/css/main.2d0eca54.css.map",
-    "main.7aac070d.js.map": "/static/js/main.7aac070d.js.map",
+    "main.157aa2e0.js.map": "/static/js/main.157aa2e0.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.bcaf8dd9.chunk.js.map": "/static/js/64.bcaf8dd9.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -30,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.2d0eca54.css",
-    "static/js/main.7aac070d.js"
+    "static/js/main.157aa2e0.js"
   ]
 }
