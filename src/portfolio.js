@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 with experience in Vue.js, TypeScript, React.js, and Node.js. Focused on creating scalable and user-friendly web applications while continuously learning and adapting to new technologies."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1EGUqAjV82NY0K0chMEvxa8-YwDXd55Xb/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: require("./containers/greeting/resume.pdf"), // Updated to use local file
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -84,20 +83,8 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
       skillName: "java",
       fontAwesomeClassname: "fab fa-java"
-    },
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
       skillName: "npm",
@@ -367,10 +354,8 @@ const podcastSection = {
 const resumeSection = {
   title: "Janan K Patel Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
   resume: [
-    "https://drive.google.com/file/d/1EGUqAjV82NY0K0chMEvxa8-YwDXd55Xb/view?usp=sharing"
+    require("./containers/greeting/resume.pdf") // Updated to use local file
   ],
   display: true // Set false to hide this section, defaults to true
 };
